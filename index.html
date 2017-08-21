@@ -13,101 +13,96 @@
                 <li><a href="#">информация</a></li>
                 <li><a href="#">фото и видео</a></li>
                 <li><a href="#">карта штата</a></li>
-                <li><a href="#">гостиницы</a></li>
+                <li><a href="hotels.html">гостиницы</a></li>
             </ul>
-            <img src="img/main-logo.jpg" width="80" height="50" alt="city of sedona">
+            <a><img src="img/main-logo.jpg" width="80" height="50" alt="city of sedona"></a>
         </nav>
 
     </header>
     <main>
         <div class="intro">
-            <h2>welcome</h2>
-            <p> - to the gorgeous - </p>
-            <h1>sedona</h1>
-            <span>"Because the Grand Canyon is sucks"</span>
+            <div class="intro-picture"><img src="intro.jpg"></div>
             <div class="curtain-hidden"></div>
         </div>
         <div class="content">
             <section class="about">
-                <h2>СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего! </h2>
-                <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+                <h2>седона — небольшой городок в аризоне, заслуживающий большего! </h2>
+                <p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
             </section>
             <section class="facts">
-                <div class="item1">
+                <div class="item">
 
-                    <h2>НАСТОЯЩИЙ ГОРОДОК</h2>
+                    <h2>настоящий городок</h2>
                     <p>— №1 —</p>
-                    <p>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ,<br> там течет своя жизнь</p>
+                    <p>седона — не аттракцион для туристов,<br> там течет своя жизнь</p>
                 </div>
-                <div class="picture1"></div>
+                <div class="picture"><img src="real-city.jpg" width="200" height="100" alt="real city"></div>
             </section>
             <section class="features">
                 <!-- features-icons will be added as background image to each items -->
                 <div class="item">
-                    <h2>Жилье</h2>
-                    <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    <h2>жилье</h2>
+                    <p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </div>
                 <div class="item">
-                    <h2>ЕДА</h2>
-                    <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+                    <h2>еда</h2>
+                    <p>всегда заказывайте фирмернный бургер, вы не разочаруетесь!</p>
                 </div>
                 <div class="item">
-                    <h2>СУВЕНИРЫ</h2>
-                    <p> Не только китайского, но и местного производства!</p>
+                    <h2>сувениры</h2>
+                    <p> не только китайского, но и местного производства!</p>
                 </div>
 
             </section>
             <section class="facts">
-                <div class="item2">
-                    <h2>ТАМ ЕСТЬ Мост дьявола</h2>
+                <div class="item">
+                    <h2>там есть мост дьявола</h2>
                     <p> — №2 — </p>
-                    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                    <p>да, по нему можно пройти! если конечно вы осмелитесь</p>
                 </div>
-                <div class="picture2"></div>
+                <div class="picture"><img src="devil's-bridge.jpg" width="200" height="100" alt="devil's bridge"></div>
             </section>
             <section class="facts">
-                <div class="item3">
-                    <h2>НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+                <div class="item">
+                    <h2>небольшая площадь</h2>
                     <p>— №3 —</p>
-                    <p>ВСЕ достопримечательности находятся очень близко</p>
+                    <p>все достопримечательности находятся очень близко</p>
                 </div>
-                <div class="item3">
-                    <h2>КРАСИВАЯ ДОРОГА</h2>
+                <div class="item">
+                    <h2>красивая дорога</h2>
                     <p>— №4 —</p>
-                    <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем не скучно</p>
+                    <p>ехать в седону из лас-вегаса совсем не скучно</p>
                 </div>
-                <div class="item3">
-                    <h2>МАЛО ТУРИСТОВ</h2>
+                <div class="item">
+                    <h2>мало туристов</h2>
                     <p>— №5 —</p>
-                    <p>Большинство едет в гранд каньон и толпится там</p>
+                    <p>большинство едет в гранд каньон и толпится там</p>
                 </div>
             </section>
             <section class="search-screen">
-                <h1>ЗАИНТЕРЕСОВАЛИСЬ?</h1>
-                <p>
-                    Укажите предполагаемые даты поездки,
+                <p><em>заинтересовались?</em> укажите предполагаемые даты поездки,
                     <br>и мы покажем вам лучшие предложения гостиниц в седоне
                 </p>
 
-                <button class="on-off-search" type="button">find hotel</button>
-                <fieldset class="hidden">
-                    <form class="hotel-search" method="get">
-                        <label for="StartDate">дата заезда</label>
-                        <input type="date" name="StartDate" id="StartDate" value="2017-04-24">
-                        <div class="calendar-icon"></div>
-                        <br>
-                        <label for="FinalDate">дата выезда</label>
-                        <input type="date" name="FinalDate" id="FinalDate" value="2017-07-04">
-                        <div class="calendar-icon"></div>
-                        <br>
-                        <label for="Adults">Взрослые</label>
-                        <input type="number" name="Adults" id="Adults" value="1" min="1" max="9">
+                <button class="on-off-search" type="button">найти</button>
+                <div class="hidden">
+                    <form class="hotel-search" method="get" action="#">
+                        <label for="startDate">дата заезда</label>
+                        <input type="date" name="startDate" id="startDate" value="2017-04-24">
+                        <button class="calendar-icon"></button>
+
+                        <label for="finalDate">дата выезда</label>
+                        <input type="date" name="finaldate" id="finaldate" value="2017-07-04">
+                        <button class="calendar-icon"></button>
+
+                        <label for="adults">Взрослые</label>
+                        <input type="number" name="adults" id="adults" value="1" min="1" max="9">
                         <label for="Infants">Дети</label>
-                        <input type="number" name="Infants" id="Infants" value="0" min="0" max="9">
-                        <br>
+                        <input type="number" name="infants" id="infants" value="0" min="0" max="9">
+
                         <button class="button2search" type="submit">найти</button>
                     </form>
-                </fieldset>
+                </div>
                 <div class="maps"></div>
 
             </section>

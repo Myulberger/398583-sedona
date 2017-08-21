@@ -43,12 +43,9 @@
                 </div>
                 <div class="daily-rate">
                     <label for="DailyRate">стоимость в сутки (руб.)</label>
-                    <table class="rate-table">
-                        <tr>
-                            <td> от 0</td>
-                            <td>до 3000</td>
-                        </tr>
-                    </table>
+                    <div class="rate-table"> от 0</div>
+                    <div class="rate-table">до 3000</div>
+
                     <input type="range" min="0" max="5000" name="Daily-rate" id="DailyRate">
                     <button type="submit">показать</button>
                     <!-- !!!!!!!!!-->
@@ -56,21 +53,23 @@
             </form>
         </section>
         <section class="sort-block">
-            <h3>НАЙДЕНО: 3</h3>
-            <span>СОРТИРОВКА:</span>
+            <span><em>найдено: 3 </em>сортировка:</span>
             <ul class="sort-by-types">
-                <li><a href="#">ПО ЦЕНЕ</a></li>
-                <li><a href="#">ПО ТИПУ</a></li>
-                <li><a href="#">ПО РЕЙТИНГУ</a></li>
+                <li><a href="#">по цене</a></li>
+                <li><a href="#">по типу</a></li>
+                <li><a href="#">по рейтингу</a></li>
             </ul>
-            <div class="sort-button up"></div>
-            <div class="sort-button down"></div>
+            <ul class="sort-button">
+                <li class="up"></li>
+                <li class="down"></li>
+            </ul>
+
         </section>
 
         <section class="sort-results">
-            <div class="result-item item1">
+            <div class="result-item">
                 <img src=".../img/hotel1.jpg" class="hotel-foto" width="100" height="50" alt="foto Amara Resort">
-                <h3>Amara Resort & Spa</h3>
+                <h2><a href="#"> Resort & Spa</a></h2>
                 <span>гостиница</span>
                 <span>от 4000 р.</span>
                 <div class="button about"> <a href="#">подробнее</a> </div>
@@ -78,9 +77,9 @@
                 <div class="star-rate"></div>
                 <span class="rating">рейтинг 8.5</span>
             </div>
-            <div class="result-item item2">
+            <div class="result-item">
                 <img src=".../img/hotel2.jpg" class="hotel-foto" width="100" height="50" alt="foto Desert Quail Inn">
-                <h3>Desert Quail Inn</h3>
+                <h2><a href="#">Desert Quail Inn</a></h2>
                 <span>мотель</span>
                 <span>от 3000 р.</span>
                 <div class="button about"> <a href="#">подробнее</a> </div>
@@ -88,9 +87,9 @@
                 <div class="star-rate"></div>
                 <span class="rating">рейтинг 8.9</span>
             </div>
-            <div class="result-item item3">
+            <div class="result-item">
                 <img src=".../img/hotel3.jpg" class="hotel-foto" width="100" height="50" alt="foto Villas at Poco Diablo">
-                <h3>Villas at Poco Diablo</h3>
+                <h2><a href="#">Villas at Poco Diablo</a></h2>
                 <span>апартаменты</span>
                 <span>от 2000 р.</span>
                 <div class="button about"> <a href="#">подробнее</a> </div>
