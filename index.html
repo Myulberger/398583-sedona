@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>City Of Sedona</title>
 </head>
 
@@ -15,13 +16,20 @@
                 <li><a href="#">карта штата</a></li>
                 <li><a href="hotels.html">гостиницы</a></li>
             </ul>
-            <a><img src="img/main-logo.jpg" width="80" height="50" alt="city of sedona"></a>
+            <a><img src="img/Sedona_toplogo.png" width="80" height="50" alt="city of sedona"></a>
         </nav>
 
     </header>
     <main>
         <div class="intro">
-            <div class="intro-picture"><img src="intro.jpg"></div>
+            <div class="intro-picture">
+                <!--<img src="img/background-main.jpg">-->
+                <img src="img/welcome.png">
+                <img src="img/to_be_gorgeous.png">
+                <img src="img/sedona_main.png">
+                <img src="img/sucks.png">
+
+            </div>
             <div class="curtain-hidden"></div>
         </div>
         <div class="content">
@@ -36,7 +44,7 @@
                     <p>— №1 —</p>
                     <p>седона — не аттракцион для туристов,<br> там течет своя жизнь</p>
                 </div>
-                <div class="picture"><img src="real-city.jpg" width="200" height="100" alt="real city"></div>
+                <div class="picture"><img src="img/real_city-pic.jpg" width="200" height="100" alt="real city"></div>
             </section>
             <section class="features">
                 <!-- features-icons will be added as background image to each items -->
@@ -60,7 +68,7 @@
                     <p> — №2 — </p>
                     <p>да, по нему можно пройти! если конечно вы осмелитесь</p>
                 </div>
-                <div class="picture"><img src="devil's-bridge.jpg" width="200" height="100" alt="devil's bridge"></div>
+                <div class="picture"><img src="img/devils_bridge-pic.jpg" width="200" height="100" alt="devil's bridge"></div>
             </section>
             <section class="facts">
                 <div class="item">
@@ -80,29 +88,30 @@
                 </div>
             </section>
             <section class="search-screen">
-                <p><em>заинтересовались?</em> укажите предполагаемые даты поездки,
+                <p><em>заинтересовались?</em></p>
+                <p> укажите предполагаемые даты поездки,
                     <br>и мы покажем вам лучшие предложения гостиниц в седоне
                 </p>
 
                 <button class="on-off-search" type="button">найти</button>
-                <div class="hidden">
-                    <form class="hotel-search" method="get" action="#">
-                        <label for="startDate">дата заезда</label>
-                        <input type="date" name="startDate" id="startDate" value="2017-04-24">
-                        <button class="calendar-icon"></button>
 
-                        <label for="finalDate">дата выезда</label>
-                        <input type="date" name="finaldate" id="finaldate" value="2017-07-04">
-                        <button class="calendar-icon"></button>
+                <form class="hotel-search" method="get" action="#">
+                    <label for="startDate">дата заезда</label>
+                    <input type="date" name="startDate" id="startDate" value="2017-04-24">
+                    <button class="calendar-icon"></button>
 
-                        <label for="adults">Взрослые</label>
-                        <input type="number" name="adults" id="adults" value="1" min="1" max="9">
-                        <label for="Infants">Дети</label>
-                        <input type="number" name="infants" id="infants" value="0" min="0" max="9">
+                    <label for="finalDate">дата выезда</label>
+                    <input type="date" name="finaldate" id="finaldate" value="2017-07-04">
+                    <button class="calendar-icon"></button>
 
-                        <button class="button2search" type="submit">найти</button>
-                    </form>
-                </div>
+                    <label for="adults">Взрослые</label>
+                    <input type="number" name="adults" id="adults" value="1" min="1" max="9">
+                    <label for="Infants">Дети</label>
+                    <input type="number" name="infants" id="infants" value="0" min="0" max="9">
+
+                    <button class="button2search" type="submit">найти</button>
+                </form>
+
                 <div class="maps"></div>
 
             </section>
