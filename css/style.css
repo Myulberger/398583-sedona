@@ -34,3 +34,12 @@ body {
     background-color: #91bdd9;
     background-image: url("../img/background-main.jpg");
 }
+
+.content .line2 .item,
+.content .line1 .item,
+.content .line2 .item h2,
+.content .line1 .item h2,
+.about {
+    background-color: #81b3d2;
+    color: rgb(255, 255, 255);
+}
