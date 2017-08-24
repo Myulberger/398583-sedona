@@ -89,22 +89,25 @@
                     <br>и мы покажем вам лучшие предложения гостиниц в седоне
                 </p>
 
-                <button class="on-off-search" type="button">найти</button>
+                <button class="on-off-search" type="button">поиск гостиницы в седоне</button>
 
                 <form class="hotel-search" method="get" action="#">
                     <label for="startdate">дата заезда</label>
-                    <input type="date" name="startdate" id="startdate" value="2017-04-24">
+                    <input type="text" name="startdate" id="startdate" value="2017-04-24">
                     <button class="calendar-icon"></button>
 
                     <label for="finaldate">дата выезда</label>
-                    <input type="date" name="finaldate" id="finaldate" value="2017-07-04">
+                    <input type="text" name="finaldate" id="finaldate" value="2017-07-04">
                     <button class="calendar-icon"></button>
 
                     <label for="adults">Взрослые</label>
-                    <input type="number" name="adults" id="adults" value="1" min="1" max="9">
+                    <div class="plusminus-button">-</div>
+                    <input type="text" name="adults" id="adults" value="1" min="1" max="9">
+                    <div class="plusminus-button">+</div>
                     <label for="infants">Дети</label>
-                    <input type="number" name="infants" id="infants" value="0" min="0" max="9">
-
+                    <div class="plusminus-button">-</div>
+                    <input type="text" name="infants" id="infants" value="0" min="0" max="9">
+                    <div class="plusminus-button">+</div>
                     <button class="button2search" type="submit">найти</button>
                 </form>
 
