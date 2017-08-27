@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>City Of Sedona</title>
 </head>
@@ -25,8 +28,10 @@
             <div class="intro-picture">
                 <img class="active-text" src="img/to_the_gorgeous.png" alt="to the gorgeous">
                 <img class="fixed text" src="img/text-intro.png" alt="welcome">
+                <img class="curtain-hidden" src="img/shadow-intro.png" alt="welcome">
+
             </div>
-            <div class="curtain-hidden"></div>
+            <!--<div class="curtain-hidden"></div>-->
         </div>
         <div class="content">
             <section class="about">
@@ -84,7 +89,7 @@
                 </div>
             </section>
             <section class="search-screen">
-                <p><em>заинтересовались?</em></p>
+                <b>заинтересовались?</b>
                 <p> укажите предполагаемые даты поездки,
                     <br>и мы покажем вам лучшие предложения гостиниц в седоне
                 </p>
@@ -94,20 +99,24 @@
                 <form class="hotel-search" method="get" action="#">
                     <label for="startdate">дата заезда</label>
                     <input type="text" name="startdate" id="startdate" value="2017-04-24">
-                    <button class="calendar-icon"></button>
+                    <button class="calendar-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+                    </button>
 
                     <label for="finaldate">дата выезда</label>
                     <input type="text" name="finaldate" id="finaldate" value="2017-07-04">
-                    <button class="calendar-icon"></button>
+                    <button class="calendar-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+                    </button>
 
                     <label for="adults">Взрослые</label>
-                    <div class="plusminus-button">-</div>
+                    <button class="plusminus-button">-</button>
                     <input type="text" name="adults" id="adults" value="1" min="1" max="9">
-                    <div class="plusminus-button">+</div>
+                    <button class="plusminus-button">+</button>
                     <label for="infants">Дети</label>
-                    <div class="plusminus-button">-</div>
+                    <button class="plusminus-button">-</button>
                     <input type="text" name="infants" id="infants" value="0" min="0" max="9">
-                    <div class="plusminus-button">+</div>
+                    <button class="plusminus-button">+</button>
                     <button class="button2search" type="submit">найти</button>
                 </form>
 
@@ -120,12 +129,21 @@
         <div class="insta"><a href="www.instagram.com/#visitsedona">#visitsedona</a></div>
         <div class="social-nets">
             <ul>
-                <li><a class="soc-button twit" href="#">twitter</a></li>
-                <li><a class="soc-button face" href="#">facebook</a></li>
-                <li><a class="soc-button tube" href="#">youtube</a></li>
+                <li>
+                    <a class="soc-button twit" href="#"><img src="img/twitter.svg" alt="twitter"></a>
+                </li>
+                <li>
+                    <a class="soc-button face" href="#"><img src="img/fb-icon.svg" alt="facebook"></a>
+                </li>
+                <li>
+                    <a class="soc-button tube" href="#"><img src="img/youtube.svg" alt="youtube"></a>
+                </li>
             </ul>
         </div>
-        <div class="html-logo"><a href="https://htmlacademy.ru/intensive/htmlcss">html logo</a></div>
+        <div class="html-logo">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">website by 
+               <img src="img/logo-htmlacademy.svg" alt="logo academy"> </a>
+        </div>
         <!-- html logo will be as background of <a> to make logo clickable -->
     </footer>
 
