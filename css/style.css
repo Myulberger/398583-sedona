@@ -324,3 +324,166 @@
             height: 48px;
             background-color: rgba(129, 179, 210, 1);
         }
+        
+        footer .social-nets img {
+            margin-top: 30%;
+        }
+        
+        .content .features .item h2 {
+            margin-top: 100px;
+        }
+        
+        .content .features .item:nth-child(1) {
+            background: url("../img/icon-1.svg") 50% 5% no-repeat;
+        }
+        
+        .content .features .item:nth-child(2) {
+            background: url("../img/icon-3.svg") 50% 5% no-repeat;
+        }
+        
+        .content .features .item:nth-child(3) {
+            background: url("../img/icon-2.svg") 50% 5% no-repeat;
+        }
+        /*  !!!  basic STYLE !!!  */
+        
+        .main-navigation {
+            background: #7de93c;
+        }
+        
+        .main-navigation a,
+        .site-nav li {
+            display: inline-block;
+            margin: 10px 50px 10px 50px;
+            width: 100px;
+        }
+        
+        .content {
+            background: #f8d9a9;
+        }
+        
+        .content section {
+            outline: 1px solid black;
+        }
+        
+        .content .features,
+        .content .facts {
+            display: flex;
+        }
+        
+        .content .features,
+        .content .facts.line3 {
+            justify-content: space-around;
+        }
+        
+        .content .facts.line1,
+        .content .facts.line2 {
+            justify-content: space-between;
+            height: 256px;
+        }
+        
+        .content .line1 .item:nth-child(1),
+        .content .line2 .item:nth-child(1) {
+            width: 400px;
+        }
+        
+        .search-screen .on-off-search,
+        .search-screen .hotel-search {
+            width: 568px;
+            outline: 1px solid black;
+        }
+        
+        .search-screen .hotel-search {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        /*
+        .search-screen .visualy-hidden {
+            display: none;
+        }*/
+        
+        .search-screen input[name="adults"],
+        .search-screen input[name="infants"],
+        .search-screen .plusminus-button,
+        .search-screen .calendar-icon {
+            width: 38px;
+            height: 38px;
+        }
+        
+        .search-screen input[name="startdate"],
+        .search-screen input[name="finaldate"] {
+            width: 308px;
+            height: 38px;
+        }
+        
+        .search-screen .button2search {
+            width: 458px;
+            height: 58px;
+            margin-bottom: 30px;
+        }
+        
+        footer {
+            background-color: #f8d9a9;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        footer .social-nets ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        footer .social-nets li {
+            margin-right: 8px;
+        }
+        /* !!!!  same for hotels.html  !!!!*/
+        
+        .hotel-filter form {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            /*background-color: #669ec0;*/
+        }
+        
+        .sort-block {
+            display: flex;
+            align-items: baseline;
+            background-color: #b289d4;
+        }
+        
+        .sort-block span {}
+        
+        .sort-block .sort-by-types {
+            display: flex;
+            width: 400px;
+            justify-content: space-around;
+        }
+        
+        .sort-block .sort-button {
+            display: flex;
+            margin-left: auto;
+        }
+        
+        .sort-results .result-item {
+            height: 155px;
+            outline: 1px solid red;
+            background-color: #e4ef34;
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        .sort-results .result-item .hotel-details {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        .sort-results .result-item .star-rate,
+        .sort-results .result-item .rating {
+            margin-left: auto;
+        }
