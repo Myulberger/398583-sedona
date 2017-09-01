@@ -9,8 +9,12 @@
             text-transform: uppercase;
             line-height: 1.857;
             text-align: center;
+        }
+        
+        .wrapper {
             min-width: 768px;
             max-width: 1200px;
+            margin: 0 auto;
         }
         
         button {
@@ -355,6 +359,8 @@
         .site-nav {
             display: flex;
             justify-content: space-around;
+            margin: 0;
+            padding: 0;
         }
         
         .site-nav li a {
