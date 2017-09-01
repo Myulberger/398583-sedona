@@ -9,6 +9,8 @@
             text-transform: uppercase;
             line-height: 1.857;
             text-align: center;
+            min-width: 768px;
+            max-width: 1200px;
         }
         
         button {
@@ -350,11 +352,13 @@
             background: #7de93c;
         }
         
-        .main-navigation a,
-        .site-nav li {
-            display: inline-block;
-            margin: 10px 50px 10px 50px;
-            width: 100px;
+        .site-nav {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .site-nav li a {
+            display: block;
         }
         
         .content {
@@ -483,7 +487,6 @@
             align-items: flex-start;
         }
         
-        .sort-results .result-item .star-rate,
-        .sort-results .result-item .rating {
+        .sort-results .result-item .rating-block {
             margin-left: auto;
         }
