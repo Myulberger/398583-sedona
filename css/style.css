@@ -479,6 +479,7 @@
             min-height: 216px;
             box-sizing: border-box;
             word-wrap: break-word;
+            background-color: #fff;
         }
         
         .content section {}
@@ -707,7 +708,11 @@
             align-items: center;
         }
         
-        footer .social-nets ul {
+        .hotel-page {
+            background-color: rgba(255, 255, 255, 1);
+        }
+        
+        .social-nets ul {
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -746,11 +751,14 @@
         
         .hotel-filter input[type="checkbox"] {
             opacity: 0;
+            display: none;
         }
         
         .hotel-filter li {
             position: relative;
             margin-top: 25px;
+            text-align: left;
+            left: -10px;
         }
         
         .infrastructure label,
@@ -777,7 +785,7 @@
         
         .hotel-filter .hotel-type {
             margin-left: 100px;
-            margin-right: 100px;
+            margin-right: 70px;
         }
         
         .daily-rate {
@@ -790,6 +798,8 @@
         
         .daily-rate-block {
             position: relative;
+            display: flex;
+            flex-wrap: wrap;
             border: 2px solid #fff;
             border-radius: 2px;
             box-sizing: border-box;
@@ -809,12 +819,15 @@
         
         .daily-rate .minrate,
         .daily-rate .maxrate {
-            width: 90px;
-            padding-left: 65px;
+            /*width: 90px;
+            padding-left: 65px;*/
+            width: 50%;
+            box-sizing: border-box;
+            text-align: right;
         }
         
         .daily-rate input {
-            width: 40px;
+            max-width: 50%;
             margin: 0;
             color: inherit;
             font: inherit;
